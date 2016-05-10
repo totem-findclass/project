@@ -60,3 +60,35 @@ a.linkVoltar {
 main {
 	text-align: center;
 }
+
+table{
+	margin: 10px;
+	border: 1px solid #000000;
+	margin-right:auto; 
+	margin-left:auto;
+	}
+
+table,th,td{
+	border-collapse: inherit;
+	}
+	
+th,td{
+	border: 1px solid #000000;
+	padding: 0px;
+	}
+	
+th span{
+	display: block; 
+	padding: 3px;
+	color: #DCDCDC;
+	}
+	
+td span{
+	display: block; 
+	padding: 3px;
+	text-align : center;
+	width: 200px;
+	height: 70px;
+	overflow: auto;
+	color: #DCDCDC !important;
+	}
