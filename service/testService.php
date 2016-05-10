@@ -1,8 +1,16 @@
 <?php
 include "ServiceCurl.php";
-include "Status.php";
-$content = new ServiceCurl("http://sistemas.unipe.br:8080/uniservice/cursoAPI/consultaDisciplinasCurso/v1",
-                array('c' => '011', 'p'=>'6', 'token'=>'unipe@2016', 'pr'=>'123123'));
+include "Request.php";
+include "Consts.php";
+
+$content = new ServiceCurl();
+$request = new Request(Consts::END_POINT_MATRICULA, ["ra" => "1320110212", "token" => Consts::TOKEN_MATRICULA]);
+
+
+$endPoint = "http://sistemas.unipe.br:8080/uniservicetoten/totenAPI/consultaSala/v1";
+$endPoint1 = "http://sistemas.unipe.br:8080/uniservice/cursoAPI/consultaDisciplinasCurso/v1"; // 'c' => '003', 'p'=>'1', 'token'=>'unipe@2016', 'pr'=>'123123'
+
+
 ?>
 <html>
 <head>
@@ -10,19 +18,14 @@ $content = new ServiceCurl("http://sistemas.unipe.br:8080/uniservice/cursoAPI/co
 <body>
 <?php
 
-$content->executeCurl();
 
-if ($content->getHttpStatus() == Status::SUSSESO)
-{
-    foreach ($content->getResultAsObject() as $chave => $valor)
-    {
-        if ($valor->semestre == '2016.1')
-        {
-            print_r($valor->nome);
-            echo "</br>";
-        }
-    }
-}
+$response = $content->execute($request);
+
+echo $response->getStatus();
+
+$data = $response->getHorario()->getResult();
+
+print_r($data);
 ?>
 </body>
 </html>
