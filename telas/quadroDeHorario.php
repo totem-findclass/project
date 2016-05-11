@@ -10,6 +10,7 @@ if(!isset($_GET["matricula"]) || empty($_GET["matricula"])){
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
 	<title>FindClass</title>
 	<style>
 		@import url(estilos/geral.css);

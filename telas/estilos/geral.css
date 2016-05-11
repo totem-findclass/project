@@ -22,6 +22,15 @@ h2 {
 	font-family: 'Open Sans', sans-serif;
 }
 
+ul li {
+	display: inline-block;
+	text-decoration: none;
+	list-style-type: none;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
 
 /* mouse over link */
 a:link, a:visited {
@@ -58,6 +67,11 @@ a.linkVoltar {
 }
 
 main {
+    width: 70%;
+    position: relative;
+    margin:0 auto;
+    padding: 1.5rem;
+
 	text-align: center;
 }
 
@@ -74,7 +88,7 @@ table,th,td{
 	
 th,td{
 	border: 1px solid #000000;
-	padding: 0px;
+	padding: 0;
 	}
 	
 th span{
@@ -90,5 +104,5 @@ td span{
 	width: 200px;
 	height: 70px;
 	overflow: auto;
-	color: #DCDCDC !important;
+	color: darkblue;
 	}
