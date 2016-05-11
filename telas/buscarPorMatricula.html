@@ -3,10 +3,10 @@
 <head>
 	<title>FindClass</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-	<style>
-		@import url(estilos/geral.css);
-	</style>
+  	<script type="text/javascript" src="js/teclado.js"></script>
+ 	<style type="text/css">@import url(estilos/teclado.css);</style>
 </head>
+
 <body>
 	<header>
 		<a class="linkVoltar" href="javascript:window.history.go(-1)">Voltar</a>
@@ -17,11 +17,37 @@
 	<form id="sub" action="quadroDeHorario.php" style="text-align:center">
 		<fieldset>
 			<label>Matrícula: </label>
-			<input name="matricula"  type="text">
-			<a href="#" onclick="document.getElementById('sub').submit()">Ok</a>
+			<input id="login" name="matricula"  type="text">
 		</fieldset>
-		
 	</form>
+
+	  <table>
+
+      <tr>
+        <td><input class="botao" type="button" value="1" onclick="Senha(this.value)" /></td>
+        <td><input class="botao" type="button" value="2" onclick="Senha(this.value)" /></td>
+        <td><input class="botao" type="button" value="3" onclick="Senha(this.value)" /></td>
+      </tr>
+
+      <tr>
+        <td><input class="botao" type="button" value="4" onclick="Senha(this.value)" /></td>
+        <td><input class="botao" type="button" value="5" onclick="Senha(this.value)" /></td>
+        <td><input class="botao" type="button" value="6" onclick="Senha(this.value)" /></td>
+      </tr>
+
+      <tr>
+        <td><input class="botao" type="button" value="7" onclick="Senha(this.value)" /></td>
+        <td><input class="botao" type="button" value="8" onclick="Senha(this.value)" /></td>
+        <td><input class="botao" type="button" value="9" onclick="Senha(this.value)" /></td>
+      </tr>
+
+      <tr>
+        <td><input class="botao" type="button" value="Limpar" onclick="Limpa()" /></td>
+        <td><input class="botao" type="button" value="0" onclick="Senha(this.value)" /></td>
+        <td><input class="botao" type="submit" value="Entrar" onclick="document.getElementById('sub').submit()"/></td>
+      </tr>
+    </table>
+
 </main>
 </body>
 </html>
