@@ -2,7 +2,7 @@
 if(!isset($_GET["matricula"]) || empty($_GET["matricula"])){
     header('Location: error.php');
 }else {
-    include "../service/HorarioMatricula.php";
+    include "service/HorarioMatricula.php";
     $matricula = $_GET["matricula"];
     $horario = buscaPorMatricula($matricula);
 }
