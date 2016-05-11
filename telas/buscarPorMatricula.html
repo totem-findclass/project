@@ -17,9 +17,9 @@
 	<form id="sub" action="quadroDeHorario.php" style="text-align:center">
 		<fieldset>
 			<label>Matrícula: </label>
-			<input id="login" name="matricula"  type="text">
+			<input id="login" name="matricula"  type="text" required>
 		</fieldset>
-	</form>
+
 
 	  <table>
 
@@ -44,9 +44,10 @@
       <tr>
         <td><input class="botao" type="button" value="Limpar" onclick="Limpa()" /></td>
         <td><input class="botao" type="button" value="0" onclick="Senha(this.value)" /></td>
-        <td><input class="botao" type="submit" value="Entrar" onclick="document.getElementById('sub').submit()"/></td>
+        <td><input class="botao" type="submit" value="Entrar"/></td>
       </tr>
     </table>
+    </form>
 
 </main>
 </body>
