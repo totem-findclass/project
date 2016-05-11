@@ -32,11 +32,11 @@ if(!isset($_GET["matricula"]) || empty($_GET["matricula"])){
 			</tr>
 <?php
             for($i = 0; $i < 4; $i++){
-                $hAtual = $horario->getAtual()->horaIncial;
+                $horaLinhaAtual = $horario->getAtual()->horaIncial;
                 echo '<tr>';
-                echo '<td class="tabela-coluna"><span>'.$hAtual.'</span></td>';
-                for($j = 1; $j < 6; $j++){
-                    if($horario->isHorario($j+1, $hAtual))
+                echo '<td class="tabela-coluna"><span>'.$horaLinhaAtual.'</span></td>';
+                for($j = 2; $j < 7; $j++){
+                    if($horario->isHorario($j, $horaLinhaAtual))
                         echo '<td class="tabela-coluna"><span>'.$horario->getNext()->disciplina.'</span></td>';
                     else{
                         echo '<td class="tabela-coluna"><span></span></td>';
