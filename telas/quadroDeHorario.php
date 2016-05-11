@@ -1,5 +1,5 @@
 <?php
-if(!isset($_GET["matricula"])){
+if(!isset($_GET["matricula"]) || empty($_GET["matricula"])){
     header('Location: error.php');
 }else {
     include "../service/HorarioMatricula.php";
@@ -46,8 +46,6 @@ if(!isset($_GET["matricula"])){
             }
 
 ?>
-			<tr>
-			</tr>
 		</table>
 
 	</main>

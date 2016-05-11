@@ -7,7 +7,8 @@ class Horario
     
     public function __construct($result)
     {
-        $this->_horario = horarioSort($result);
+        if(!empty($result))
+            $this->_horario = horarioSort($result);
     }
 
 
