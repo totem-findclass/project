@@ -13,15 +13,17 @@ if(!isset($_GET["matricula"]) || empty($_GET["matricula"])){
     <meta charset="UTF-8">
 	<title>FindClass</title>
 	<style>
-		@import url(estilos/geral.css);
+        @import url(css/estilo.css);
 	</style>
 </head>
 <body>
-	<header>
-		<h1>Quadro de Horários</h1>
-	</header>
+    <header>
+        <a href="index.html#top"><i class="fa fa-home" aria-hidden="true"></i><br />Início</a>
+        <h1 class="logo">UNIPE - Find Your Class</h1>
+    </header>
 
-	<main>
+	<main style="text-align:center">
+        <h1>Quadro de Horários</h1>
 		<table>
 			<tr>
                 <th class="tabela-coluna"><span></span></th>

@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
 	<title>FindClass</title>
+	<meta charset="UTF-8">
 	<style type="text/css">
-		@import url(estilos/geral.css);
+		@import url(css/estilo.css);
+        @import url(lib/font-awesome-4.6.2/css/font-awesome.min.css);
 	</style>
 </head>
 <body>
 
 	<header>
-		<a href="#top">Voltar</a>
-		<h1>Find</h1>
-		<h2>Selecionar por: </h2>
-
+		<a href="index.html#top"><i class="fa fa-home" aria-hidden="true"></i><br />Início</a>
+		<h1 class="logo">UNIPE - Find Your Class</h1>
 	</header>
 	
-	<main>
-		<ul>
+	<main style="text-align:center">
+        <h2>Selecionar por: </h2>
+		<ul class="botoes">
 			<li>
-				<a class="linkMatricula" href="buscarPorMatricula.html">Matrícula</a>
+				<a class="botao" href="buscarPorMatricula.html"><i class="fa fa-credit-card" aria-hidden="true"></i> Matrícula</a>
 			</li>
 			<li>
-				<a class="linkBuscarCurso" href="buscarPorCurso.html">Curso</a>
+				<a class="botao" href="buscarPorCurso.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Curso</a>
 			</li>
 		</ul>
 	</main>

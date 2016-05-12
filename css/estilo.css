@@ -1,0 +1,131 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #075784 url(../img/bg.jpg) repeat-x top;
+    font-family: arial;
+    color: #fff;
+    padding: 0 50px;
+}
+
+p {
+    font-size: 25px;
+    color: #c6e9fd;
+}
+
+header a {
+    display: inline-block;
+    width: 130px;
+    height: 129px;
+    background: url(../img/bt-inicio.png);
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #0f70a7;
+    padding: 20px 15px 0  0;
+    margin:-10px 0 0 0;
+}
+header a i {
+    color: #bababa;
+    font-size: 70px!important;
+}
+header a i:hover {
+    color: #f3c900;
+    transition: color 1s;
+}
+header h1.logo {
+    display: inline-block;
+    width: 371px;
+    height: 80px;
+    background: url(../img/logos.png);
+    text-indent: -9000px;
+    vertical-align: top;
+    margin: 12px 0 0 30px;
+}
+
+main h1, main h2 {
+    color: #fed200;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+main h1 i, main h2 i {
+    background: #fff;
+    padding: 2px 14px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #000;
+    text-shadow: none;
+    color: #075784;
+    background-image: linear-gradient(to top, white, #efefef);
+}
+
+main h2 {
+    font-weight: normal;
+    font-size: 30px;
+    color: #fff;
+}
+
+ul.botoes {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.botoes li {
+   display: block;
+   line-height: 80px;
+}
+
+ul.botoes-linha li {
+    display: inline-block;
+    margin: 20px 10px 10px 0;
+}
+
+ul.botoes a.botao, input.botao{
+    background: #fff;
+    border: 3px solid #3188b9;
+    color: #5f5f5f;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 25px;
+    text-decoration: none;
+    background-image: linear-gradient(to bottom, white, #efefef);
+}
+
+ul.botoes a.botao:hover {
+   background: #f3c900;
+   transition: background 1s;
+}
+
+
+
+/*css test*/
+table{
+    max-width: 100%;
+    height: auto;
+    margin: 60px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+input.botao{
+    width: 300px;
+    height: 100px;
+    background: #fff;
+    border: 3px solid #3188b9;
+    color: #5f5f5f;
+    border-radius: 5px;
+    padding: 4px 11px;
+    font-size: 25px;
+    text-decoration: none;
+    background-image: linear-gradient(to bottom, white, #efefef);
+
+}
+
+input.botao:active {
+    background: #f3c900;
+    box-shadow: inset 0 2px 5px #fff, 0 1px 3px #666 !important;
+    top:2px
+}
