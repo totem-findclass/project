@@ -1,0 +1,123 @@
+body {
+	background-color: #87CEEB;
+	margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    background-color: #87CEEB;
+}
+
+label {
+	color: white; 
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px; 
+}
+
+h1 {
+	 color: white; 
+	 font-family: Comic Sans, Comic Sans MS, cursive;
+	 text-align: center;
+	 font-size: 40px; 
+	 text-align: center;
+}
+
+h2 {
+	color: white;
+	font-family: Comic Sans, Comic Sans MS, cursive;
+	font-size: 30px;
+	text-align: center;
+}
+
+ul li {
+	display: inline-block;
+	text-decoration: none;
+	list-style-type: none;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+}	
+
+
+/* mouse over link */
+a:link, a:visited {
+    background-color: #A9A9A9;
+    color: white;
+	font-family: Comic Sans, Comic Sans MS, cursive;
+	font-size: 35px;
+    padding: 28px 50px;
+    margin-top: 20px;
+    text-align: center;	
+    text-decoration: none;
+    display: inline-block;
+    border-style: outset;
+}
+
+a:hover, a:active {
+	color: -webkit-link;
+    background-color: #DCDCDC;
+    text-decoration: underline;
+}
+
+a.linkMatricula {
+	background-image: url("../imagem/Icons/icon_matricula.svg");
+    background-repeat: no-repeat;
+
+}
+
+a.linkBuscarCurso {
+	background-image: url("../imagem/Icons/icon_buscarCurso.svg");
+	background-repeat: no-repeat;
+
+}
+
+main {
+	text-align: center;
+}
+
+table{
+	margin: 10px;
+	border: 1px solid #000000;
+	margin-right:auto; 
+	margin-left:auto;
+	}
+
+table,th,td{
+	border-collapse: inherit;
+	}
+	
+th,td{
+	border: 1px solid #000000;
+	padding: 0;
+	}
+	
+th span{
+	display: block; 
+	padding: 3px;
+	color: #DCDCDC;
+	}
+	
+td span{
+	display: block; 
+	padding: 3px;
+	text-align : center;
+	width: 200px;
+	height: 70px;
+	overflow: auto;
+	color: darkblue;
+	}
+
+ .textbox { 
+    background: white; 
+    border: 1px double #DDD; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px #333; 
+    color: #666; 
+    outline: none; 
+    height:25px; 
+    width: 275px; 
+  } 
+ 
+
+
