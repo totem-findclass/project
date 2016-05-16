@@ -124,6 +124,10 @@ table{
     margin-left:auto;
 }
 
+.horario td, .horario th{
+    border: 1px solid white;
+}
+
 input.botao{
     width: 250px;
     height: 80px;
@@ -154,4 +158,9 @@ input.botao:active {
     text-align: center;
     margin: 0 auto;
     max-width: 100%
+}
+
+.horario a:link, .horario a:visited {
+    color: white;
+    text-decoration: none;
 }

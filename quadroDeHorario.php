@@ -11,7 +11,7 @@ if(!isset($_GET["matricula"]) || empty($_GET["matricula"])){
 
 	<main style="text-align:center">
         <h1>Quadro de Horários</h1>
-		<table>
+		<table class="horario">
 			<tr>
                 <th class="tabela-coluna"><span></span></th>
 				<th class="tabela-coluna"><span>Segunda</span></th>
