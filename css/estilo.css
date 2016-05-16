@@ -14,6 +14,19 @@ p {
     color: #c6e9fd;
 }
 
+label {
+    text-shadow: 1px 1px 1px #000;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    width: 30%;
+    font-size: 20px;
+}
+
 header a {
     display: inline-block;
     width: 130px;
