@@ -15,3 +15,7 @@ function buscaPorMatricula($matricula)
     
     return $response->getHorario();
 }
+
+function buscaRota($sala){
+    return "img/map/mapa.png";
+}

@@ -6,6 +6,7 @@
     <style type="text/css">
         @import url(css/estilo.css);
         @import url(lib/font-awesome-4.6.2/css/font-awesome.min.css);
+        @import url(lightbox/css/lightbox.min.css);
     </style>
     <script type="text/javascript" src="js/teclado.js"></script>
 </head>

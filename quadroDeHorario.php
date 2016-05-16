@@ -26,9 +26,10 @@ if(!isset($_GET["matricula"]) || empty($_GET["matricula"])){
                 echo '<tr>';
                 echo '<td class="tabela-coluna"><span>'.$horaLinhaAtual.'</span></td>';
                 for($j = 2; $j < 7; $j++){
-                    if($horario->isHorario($j, $horaLinhaAtual))
-                        echo '<td class="tabela-coluna"><span>'.$horario->getNext()->disciplina.'</span></td>';
-                    else{
+                    if($horario->isHorario($j, $horaLinhaAtual)) {
+                        $atual = $horario->getNext();
+                        echo '<td class="tabela-coluna"><span><a href="mapa.php?sala=' . $atual->sala . '">' . $atual->disciplina . '</span></td>';
+                    } else{
                         echo '<td class="tabela-coluna"><span></span></td>';
                     }
                 }
