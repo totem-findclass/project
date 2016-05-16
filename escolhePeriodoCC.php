@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<meta charset="UTF-8">
-	<title>FindClass</title>
-	<style>
-		@import url(css/estilo.css);
-	</style>
-</head>
-<body>
-<header>
-	<a href="javascript:window.history.go(-1)">Voltar</a>
-	<h1 class="logo">UNIPE - Find Your Class</h1>
-</header>
+<?php include 'header.php' ?>
 
 
 	<main style="text-align:center">

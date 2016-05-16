@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<meta charset="UTF-8">
-	<title>FindClass</title>
-	<style>
-		@import url(estilos/geral.css);
-	</style>
-</head>
-<body>
-	<header>
-		<a class="linkVoltar" href="javascript:window.history.go(-1)">Voltar</a>
+<?php include 'header.php' ?>
 		<h1 style="text-align:center">Digite a sua senha</h1>
-	</header>
 
 	<main>
 		<form style="text-align:center">

@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-	<title>FindClass</title>
-  	<script type="text/javascript" src="js/teclado.js"></script>
- 	    <!--<style type="text/css">@import url(estilos/teclado.css);</style>-->
-     <style type="text/css">@import url(css/estilo.css);</style>
-
-</head>
-
-<body>
-    <header>
-        <a href="index.html#top"><i class="fa fa-home" aria-hidden="true"></i><br />Início</a>
-        <h1 class="logo">UNIPE - Find Your Class</h1>
-    </header>
+<?php include 'header.php' ?>
 
     <main style="text-align:center">
         <form id="sub" action="quadroDeHorario.php" >
