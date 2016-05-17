@@ -4,36 +4,38 @@ if(!isset($_GET["matricula"]) || empty($_GET["matricula"])){
 }else {
     include "service/HorarioMatricula.php";
     $matricula = $_GET["matricula"];
-    $horario = buscaPorMatricula($matricula);
+    $horario = buscaPorMatricula($matricula)->getResult();
     include 'header.php';
 }
 ?>
 
 	<main style="text-align:center">
-        <?php if (!$horario->hasHorario()) { ?>
+        <?php if (!empty($horario)) { ?>
         <h1>Quadro de Horários</h1>
         <table class="horario">
             <tr>
-                <th class="tabela-coluna"><span></span></th>
-                <th class="tabela-coluna"><span>Segunda</span></th>
-                <th class="tabela-coluna"><span>Terça</span></th>
-                <th class="tabela-coluna"><span>Quarta</span></th>
-                <th class="tabela-coluna"><span>Quinta</span></th>
-                <th class="tabela-coluna"><span>Sexta</span></th>
+                <th ><span></span></th>
+                <th ><span>Segunda</span></th>
+                <th ><span>Terça</span></th>
+                <th ><span>Quarta</span></th>
+                <th ><span>Quinta</span></th>
+                <th ><span>Sexta</span></th>
             </tr>
             <?php
 
-            for ($i = 0; $i < 4; $i++) {
-                $horaLinhaAtual = $horario->getAtual()->horaIncial;
+            while(($atual = current($horario))){
+                $horaLinhaAtual = $atual->horaIncial;
                 echo '<tr>';
-                echo '<td class="tabela-coluna"><span>' . $horaLinhaAtual . '</span></td>';
+                echo '<td><span>' . $horaLinhaAtual . '</span></td>';
                 for ($j = 2; $j < 7; $j++) {
-                    if ($horario->isHorario($j, $horaLinhaAtual)) {
-                        $atual = $horario->getNext();
-                        echo '<td class="tabela-coluna"><span><a href="mapa.php?sala=' . $atual->sala . '">' . $atual->disciplina . '</span></td>';
-                    } else {
-                        echo '<td class="tabela-coluna"><span></span></td>';
+                    echo '<td >';
+                    if ($atual) {
+                        if ($atual->diaSemana == $j AND $atual->horaIncial == $horaLinhaAtual) {
+                            echo '<span><a href="mapa.php?sala=' . $atual->sala . '">' . $atual->disciplina . '</br>'.$atual->sala.'</span>';
+                            $atual = next($horario);
+                        }
                     }
+                    echo '</td>';
                 }
                 echo '</tr>';
             }
