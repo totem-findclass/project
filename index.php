@@ -1,4 +1,4 @@
-<?php include 'header.php' ?>
+<?php include 'header2.php' ?>
 	
 	<main style="text-align:center">
         <h2>Selecionar por: </h2>
