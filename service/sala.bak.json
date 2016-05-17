@@ -1,139 +1,118 @@
 {
   "a" : {
-    "img" : "bloco-a.png",
+    "img" : "bloco-a.jpg",
     "point" : {
       "x" : "0",
       "y" : "0"
     }
   },
   "b" : {
-    "img" : "bloco-b.png",
+    "img" : "bloco-b.jpg",
     "point" : {
       "x" : "0",
       "y" : "0"
     }
   },
   "c" : {
-    "img" : "bloco-c.png",
+    "img" : "bloco-c.jpg",
     "point" : {
       "x" : "0",
       "y" : "0"
     }
   },
   "d" : {
-    "img" : "bloco-d.png",
+    "img" : "bloco-d.jpg",
     "point" : {
       "x" : "0",
       "y" : "0"
     }
   },
   "e" : {
-    "img" : "bloco-e.png",
+    "img" : "bloco-e.jpg",
     "point" : {
       "x" : "0",
       "y" : "0"
     }
   },
   "f" : {
-    "img" : "bloco-f.png",
+    "img" : "bloco-f.jpg",
     "point" : {
       "x" : "0",
       "y" : "0"
     }
   },
   "g" : {
-    "img" : "bloco-g.png",
+    "img" : "bloco-g.jpg",
     "point" : {
       "x" : "0",
       "y" : "0"
     }
   },
   "h" : {
-    "img" : "bloco-h.png",
+    "img" : "bloco-h.jpg",
     "point" : {
       "x" : "0",
       "y" : "0"
     }
   },
   "i" : {
-    "img" : "bloco-i.png",
+    "img" : "bloco-i.jpg",
     "point" : {
       "x" : "0",
       "y" : "0"
     }
   },
   "j" : {
-    "img" : "bloco-j.png",
-    "point" : {
-      "x" : "0",
-      "y" : "0"
-    }
-  },
-  "k" : {
-    "img" : "bloco-k.png",
+    "img" : "bloco-j.jpg",
     "point" : {
       "x" : "0",
       "y" : "0"
     }
   },
   "l" : {
-    "img" : "bloco-l.png",
+    "img" : "bloco-l.jpg",
     "point" : {
       "x" : "0",
       "y" : "0"
     }
   },
   "m" : {
-    "img" : "bloco-m.png",
+    "img" : "bloco-m.jpg",
     "point" : {
       "x" : "0",
       "y" : "0"
     }
   },
   "n" : {
-    "img" : "bloco-n.png",
+    "img" : "bloco-n.jpg",
     "point" : {
       "x" : "0",
       "y" : "0"
     }
   },
   "o" : {
-    "img" : "bloco-o.png",
+    "img" : "bloco-o.jpg",
     "point" : {
       "x" : "0",
       "y" : "0"
     }
   },
   "p" : {
-    "img" : "bloco-p.png",
+    "img" : "bloco-p.jpg",
     "point" : {
       "x" : "0",
       "y" : "0"
     }
   },
   "q" : {
-    "img" : "bloco-q.png",
-    "point" : {
-      "x" : "0",
-      "y" : "0"
-    }
-  },
-  "r" : {
-    "img" : "bloco-r.png",
-    "point" : {
-      "x" : "0",
-      "y" : "0"
-    }
-  },
-  "s" : {
-    "img" : "bloco-s.png",
+    "img" : "bloco-q.jpg",
     "point" : {
       "x" : "0",
       "y" : "0"
     }
   },
   "eva" : {
-    "img" : "bloco-eva.png",
+    "img" : "bloco-eva.jpg",
     "point" : {
       "x" : "0",
       "y" : "0"

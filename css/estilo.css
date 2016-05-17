@@ -136,7 +136,7 @@ table{
 }
 
 .horario td{
-    font-family: sans-serif, Helvetica, Arial,"Times New Roman"
+    font-family: sans-serif, Helvetica, Arial,"Times New Roman";
     border: solid 1px;
     height: 60px;
     width: 160px;
@@ -168,12 +168,13 @@ input.botao:active {
 /*tela mapa*/
 .map{
     margin: 0 auto;
-    width: 60%;
+    width: 40%;
 }
 .rota{
     text-align: center;
     margin: 0 auto;
-    max-width: 100%
+    max-width: 100%;
+
 }
 
 .horario a:link, .horario a:visited {

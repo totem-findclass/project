@@ -23,5 +23,5 @@ function buscaRota($sala){
     if(!array_key_exists(strtolower($matches[0]), $salas))
         return null;
     $result = $salas[strtolower($matches[0])]['img'];
-    return 'img/map/'.$result;
+    return 'img/map/v2/'.$result;
 }
