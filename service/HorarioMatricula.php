@@ -17,5 +17,11 @@ function buscaPorMatricula($matricula)
 }
 
 function buscaRota($sala){
-    return "img/map/mapa.png";
+    preg_match('/^[a-zA-Z]+/',$sala, $matches);
+    $content = file_get_contents('service/sala.json');
+    $salas = json_decode($content, true);
+    if(!array_key_exists(strtolower($matches[0]), $salas))
+        return null;
+    $result = $salas[strtolower($matches[0])]['img'];
+    return 'img/map/'.$result;
 }

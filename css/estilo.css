@@ -117,15 +117,11 @@ ul.botoes a.botao:hover, .voltar:hover {
 
 /*css test*/
 table{
-    max-width: 100%;
-    height: auto;
-    margin: 30px;
-    margin-right:auto;
-    margin-left:auto;
+    margin: 30px auto;
 }
 
-.horario td, .horario th{
-    border: 1px solid white;
+.horario th, .horario td{
+    border: 1px solid #ddd;
 }
 
 input.botao{
@@ -163,4 +159,7 @@ input.botao:active {
 .horario a:link, .horario a:visited {
     color: white;
     text-decoration: none;
+    display: block;
+    height: 100%;
+    width: auto;
 }
