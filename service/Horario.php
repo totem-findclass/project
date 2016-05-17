@@ -41,6 +41,10 @@ class Horario
         return false;
     }
 
+    public function hasHorario(){
+        return empty($this->_horario);
+    }
+
 //    public function getResultAsArray()
 //    {
 //        return json_decode($this->_horario, true);

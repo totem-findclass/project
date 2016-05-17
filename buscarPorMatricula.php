@@ -3,10 +3,9 @@
     <main style="text-align:center">
         <form id="sub" action="quadroDeHorario.php" >
             <h2>Digite a sua matrícula</h2>
-            <fieldset>
                 <label>Matrícula: </label>
                 <input id="login" class="textbox" name="matricula"  type="text" required>
-            </fieldset>
+
 
           <table>
               <tr>
