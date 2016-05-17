@@ -26,9 +26,9 @@ if(!isset($_GET["matricula"]) || empty($_GET["matricula"])){
             while(($atual = current($horario))){
                 $horaLinhaAtual = $atual->horaIncial;
                 echo '<tr>';
-                echo '<td><span>' . $horaLinhaAtual . '</span></td>';
+                echo '<td class="horario"><span>' . $horaLinhaAtual . '</span></td>';
                 for ($j = 2; $j < 7; $j++) {
-                    echo '<td >';
+                    echo '<td class="horario">';
                     if ($atual) {
                         if ($atual->diaSemana == $j AND $atual->horaIncial == $horaLinhaAtual) {
                             echo '<span><a href="mapa.php?sala=' . $atual->sala . '">' . $atual->disciplina . '</br>'.$atual->sala.'</span>';

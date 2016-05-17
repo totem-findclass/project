@@ -18,14 +18,14 @@ p {
 label {
     text-shadow: 1px 1px 1px #000;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 30px;
 }
 
-input,
-textarea {
+input,textarea {
     padding: 10px;
-    width: 30%;
-    font-size: 20px;
+    height: 30px;
+    width: 400px;
+    font-size: 30px;
 }
 
 header a {
@@ -117,12 +117,29 @@ ul.botoes a.botao:hover, .voltar:hover {
 
 /*css test*/
 table{
-    margin: 30px auto;
-    border-collapse: collapse;
-
+    max-width: 100%;
+    height: auto;
+    margin: 60px;
+    margin-right:auto;
+    margin-left:auto;
 }
 
-.horario th, .horario td{
+.horario{
+    font-size: 14px;
+    border: solid 1px;
+    max-width: 100%;
+    height: auto;
+    margin: 60px;
+    border-collapse: collapse;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.horario td{
+    font-family: sans-serif, Helvetica, Arial,"Times New Roman"
+    border: solid 1px;
+    height: 60px;
+    width: 160px;
     padding: 3px;
     border: 1px solid #ddd;
 }
