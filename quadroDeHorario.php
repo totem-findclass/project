@@ -20,6 +20,7 @@ if(!isset($_GET["matricula"]) || empty($_GET["matricula"])){
                 <th ><span>Quarta</span></th>
                 <th ><span>Quinta</span></th>
                 <th ><span>Sexta</span></th>
+                <th ><span>Sabado</span></th>
             </tr>
             <?php
 
@@ -27,15 +28,23 @@ if(!isset($_GET["matricula"]) || empty($_GET["matricula"])){
                 $horaLinhaAtual = $atual->horaIncial;
                 echo '<tr>';
                 echo '<td class="horario"><span>' . $horaLinhaAtual . '</span></td>';
-                for ($j = 2; $j < 7; $j++) {
-                    echo '<td class="horario">';
-                    if ($atual) {
-                        if ($atual->diaSemana == $j AND $atual->horaIncial == $horaLinhaAtual) {
-                            echo '<span><a href="mapa.php?sala=' . $atual->sala . '">' . $atual->disciplina . '</br>'.$atual->sala.'</span>';
-                            $atual = next($horario);
+                for ($j = 2; $j < 8; $j++) {
+                        echo '<td class="horario">';
+                        if ($atual) {
+                            if ($atual->diaSemana == $j AND $atual->horaIncial == $horaLinhaAtual) {
+                                echo '<span><a href="mapa.php?sala=' . $atual->sala . '">' . $atual->disciplina . '</br>' . $atual->sala . '</span>';
+                                $atual = next($horario);
+                                if ($atual)
+                                while($atual->diaSemana == $j AND $atual->horaIncial == $horaLinhaAtual){
+
+                                    $atual = next($horario);
+                                    if (!$atual)
+                                        break;
+                                }
+                            }
                         }
-                    }
-                    echo '</td>';
+                        echo '</td>';
+
                 }
                 echo '</tr>';
             }
